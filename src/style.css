@@ -40,6 +40,12 @@ ul > li {
   text-align: center;
 }
 
+a,
+a:hover a:active a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 input[type="text"] {
   height: 25px;
   width: 200px;
@@ -54,6 +60,10 @@ table {
 table th {
   color: white;
   background-color: #777;
+}
+
+tr:hover {
+  background-color: yellow;
 }
 
 th,
