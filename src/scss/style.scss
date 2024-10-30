@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  &.body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+h3 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  margin-bottom: 10px;
+
+
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  > li {
+    border: solid 1px #999;
+    display: inline-block;
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+  }
+}
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover &:active &:focus {
+    color: black;
+    text-decoration: none;
+   }
+  }
+}
+
+
+input[type="text"] {
+  height: 25px;
+  width: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+
+th {
+  color: white;
+  background-color: #777;
+}
+
+
+tr{
+  &:hover {
+    background-color: yellow;
+  }
+
+  > td {
+    padding: 8px;
+
+    &.id {
+      width: 120px;
+      text-align: center;
+    }
+    
+    &.company {
+      width: 150px;
+      text-align: center;
+    }
+    
+    &.price {
+      width: 100px;
+      text-align: right;
+    }
+  }
+}
+  
+  th,
+  td {
+    height: 30px;
+  }
+
+
+
+
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+  .card {
+    border: solid 1px #999;
+    border-radius: 8px;
+    padding: 10px;
+    flex-basis: 250px;
+    }
+  }
+}
+
+footer {
+  margin: 20px;
+}
